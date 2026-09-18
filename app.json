@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Screen Capture UX",
+    "slug": "screen-capture-ux",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.andirayka.screencaptureux"
+    },
+    "android": {
+      "package": "com.andirayka.screencaptureux",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "50035cc8-ee38-4bbe-8bd7-3f75c6f9dead"
+      }
+    },
+    "owner": "andirayka"
+  }
+}
