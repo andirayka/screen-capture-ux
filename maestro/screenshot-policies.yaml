@@ -1,0 +1,20 @@
+appId: com.andirayka.screencaptureux
+name: Screenshot policy modes
+tags:
+  - android
+  - e2e
+---
+- launchApp:
+    stopApp: true
+- assertVisible: "Screenshot modes"
+- startRecording: screenshot-policies-e2e.mp4
+- assertVisible: "ALLOWED"
+- assertVisible: "Nothing is intercepted."
+- tapOn: "Detected"
+- assertVisible: "DETECTED"
+- assertVisible: "The capture succeeds. The app is told after the fact."
+- assertVisible: "0"
+- tapOn: "Blocked"
+- assertVisible: "BLOCKED"
+- assertVisible: "Nothing is saved, and the app is never told."
+- stopRecording
